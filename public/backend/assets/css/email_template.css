@@ -1,0 +1,929 @@
+/* =======================
+    Helping Classes
+========================== */
+.d-none {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* =======================
+    Wizard Styling
+========================== */
+#step-2 {
+    padding: 100px 0px;
+}
+#step-3 {
+    padding: 100px 0px;
+}
+
+.tab-pane,
+.toolbar-bottom {
+    background: #a4d679;
+    overflow-y: scroll !important;
+}
+
+/* .wizard-section {
+    padding: 100px 0px;
+} */
+
+.frame-selection-anchor {
+    cursor: pointer;
+    width: 100%;
+}
+
+.frame-selection-anchor img {
+    width: 100%;
+    margin: 30px 0px;
+    border: 1px solid #000;
+}
+
+.sw .toolbar>.sw-btn {
+    padding: 0.84rem 2.14rem;
+    font-size: 14px
+}
+
+.sw-theme-arrows>.nav .nav-link.active {
+    color: #000 !important;
+    border-color: #4c8e17 !important;
+    background-color: #4c8e17 !important;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.sw-theme-arrows>.nav .nav-link.done {
+    color: #fff;
+    border-color: #a4d67a;
+    background-color: #a4d67a;
+    cursor: pointer;
+}
+
+.sw-theme-arrows>.nav .nav-link.done::after {
+    border-left-color: #a4d67a !important;
+}
+
+.sw-theme-arrows>.nav .nav-link.active::after {
+    border-left-color: #4c8e17 !important;
+}
+
+.sw>.progress>.progress-bar {
+    background-color: #4c8e17;
+}
+
+.sw .toolbar>.sw-btn {
+    background-color: #4c8e17 !important;
+    border: 1px solid #4c8e17;
+}
+
+
+/* ================
+    Tooltip CSS
+==================== */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.heading_style_tooltip {
+    top: 210px;
+    right: 40px;
+    position: absolute;
+    display: inline-block;
+    margin-top: 14px;
+    margin-left: 25px;
+    display: none;
+}
+
+.cover_heading_style_tooltip {
+    top: 290px;
+    right: 120px;
+    position: absolute;
+    display: inline-block;
+    margin-top: 14px;
+    margin-left: 25px;
+    display: none;
+}
+
+.body_style_tooltip {
+    top: 360px;
+    right: 40px;
+    position: absolute;
+    display: inline-block;
+    margin-top: 14px;
+    margin-left: 25px;
+    display: none;
+}
+
+.cover_sub_text_style_tooltip {
+    top: 430px;
+    right: 120px;
+    position: absolute;
+    display: inline-block;
+    margin-top: 14px;
+    margin-left: 25px;
+    display: none;
+}
+
+.footer_style_tooltip {
+    top: 660px;
+    right: 165px;
+    position: absolute;
+    display: inline-block;
+    margin-top: 14px;
+    margin-left: 25px;
+    display: none;
+}
+
+.tooltip_content {
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 0 5px #CCC;
+    position: relative;
+    display: inline-block;
+    padding: 30px 15px 15px 15px;
+    width: 250px;
+}
+
+.arrow {
+    background-color: #fff;
+    position: absolute;
+    left: -9px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    top: 15px;
+}
+
+.arrow.shadow {
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 0 5px #CCC;
+}
+
+.alignment_icons a {
+    font-size: 20px;
+}
+
+.close .close_btn {
+    padding: 3px 9px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #000 !important;
+}
+
+
+/* ==============================
+    Inner Post Card Styling
+================================= */
+
+
+.post_card {
+    margin: 0 auto;
+    max-width: 720px;
+    min-height: 850px;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    background-position: center center !important;
+    padding: 220px 100px 65px 100px;
+    border: 1px solid #4c8e17;
+}
+
+.cover_card {
+    margin: 0 auto;
+    max-width: 720px;
+    min-height: 850px;
+    background: url('../new_frames/nf4.png');
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    background-position: center center !important;
+    padding: 300px 100px 200px 100px;
+    border: 1px solid #4c8e17;
+}
+
+.post_card_show {
+    margin: 0 auto;
+    max-width: 720px;
+    min-height: 600px;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    background-position: center center !important;
+    padding: 145px 50px 12px 50px;
+    border: 1px solid #4c8e17;
+}
+
+.cover_card_show {
+    margin: 0 auto;
+    max-width: 720px;
+    min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    background-position: center center !important;
+    padding: 195px 60px 140px 60px;
+}
+
+.regards_text {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.post_card_show .regards_text {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.heading_text {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+    margin-bottom: 100px;
+    overflow: hidden;
+    border: 1px dashed;
+}
+
+.cover_heading {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+    margin-bottom: 100px;
+    overflow: hidden;
+    border: 1px dashed;
+}
+
+.heading_text_show {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.cover_heading_show {
+    font-size: 45px;
+    line-height: 70px;
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.heading_text:focus-visible {
+    outline: none;
+    border: 1px dashed #000;
+}
+
+.body_text {
+    min-height: 200px;
+    max-height: 200px;
+    margin-bottom: 100px;
+    font-family: 'Bentham', serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px dashed;
+}
+
+.cover_sub_text {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    font-family: 'Bentham', serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px dashed;
+}
+
+.body_text_show {
+    min-height: 200px;
+    max-height: 200px;
+    margin-bottom: 30px;
+    font-family: 'Bentham', serif;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cover_sub_text_show {
+    margin-bottom: 30px;
+    font-family: 'Bentham', serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.body_text:focus-visible {
+    outline: none;
+    border: 1px dashed #000;
+}
+
+.footer_text {
+    font-size: 25px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    bottom: 0px;
+    font-family: 'Great Vibes', cursive;
+    overflow: hidden;
+    border: 1px dashed;
+}
+
+.footer_text_show {
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    bottom: 0px;
+    font-family: 'Great Vibes', cursive;
+    overflow: hidden;
+}
+
+.footer_text:focus-visible {
+    outline: none;
+    border: 1px dashed #000;
+}
+
+.amount_show {
+    font-size: 14px;
+    position: absolute;
+    width: 75%;
+    text-align: center;
+    left: 12%;
+    margin: 0 auto;
+    bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    transform: scaleX(-1);
+
+}
+
+.amount_show p {
+    line-height: 15px;
+}
+
+/* ==========================
+    Preview Card Styling
+=============================  */
+
+#container,
+#shell {
+    width: 40%;
+    max-width: 500px;
+    height: 600px;
+    display: block;
+    position: relative;
+    z-index: 10;
+    margin: 50px 0px;
+    cursor: pointer;
+}
+
+#container {
+    width: 100%;
+    transform: rotateX(45deg);
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+#shell {
+    left: 50%;
+    perspective: 1400px;
+    transform: translateX(-50%);
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -webkit-backface-visibility: visible;
+    transform-origin: left;
+    transform-style: preserve-3D;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+div#box1 {
+    background: url('../new_frames/nf4.png');
+    background-color: #fff;
+    background-size: 100% 100%;
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-backface-visibility: hidden;
+    z-index: 10;
+    border: 1px solid #000;
+}
+
+div#box1_back {
+    background: #FFF;
+    transform: rotate3d(0, 1, 0, 0deg);
+    z-index: 0;
+}
+
+div #box1_back .inner_box1_back {
+    width: 100%;
+    height: 600px;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+div#box2 {
+    background: url('../new_frames/f1.png');
+    background-color: #fceceb;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-backface-visibility: visible;
+    z-index: -1;
+}
+
+h6 {
+    font-family: 'lobster', cursive;
+    font-size: 150%;
+    color: #000;
+    margin: 0px;
+    position: relative;
+    top: 30%;
+    display: -webkit-box;
+    width: 100%;
+    left: 40px;
+    -webkit-box-pack: center;
+    font-weight: 200;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 3vh;
+}
+
+#box2 h2 {
+    color: #E6B014;
+    font-size: 40px;
+    position: relative;
+    top: 160px;
+    left: 90px;
+}
+
+#box2 .for {
+    color: #000;
+    font-size: 14px;
+    text-decoration: underline;
+    position: relative;
+    text-align: center;
+    top: 135px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #container,
+    #shell {
+        width: 70%;
+        max-height: 70%;
+        top: 10%;
+    }
+}
+
+/* ==========================
+    Payment Card Design
+=============================  */
+
+.cards {
+    margin-left: 32%;
+    margin-top: 400px;
+    margin-bottom: 30px;
+    width: 400px;
+    height: 208px;
+    background: linear-gradient(112.03deg, #FE5D7F 0%, #1E2BB4 100%);
+    border-radius: 16px !important;
+}
+
+.amount {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    padding: 130px 180px 24px 47px;
+    font-family: Custom;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    z-index: 9999;
+}
+
+.amount .input-group {
+    margin-left: -25px !important;
+}
+
+.amount input {
+    background: transparent;
+    border: 1px dashed #fff;
+    box-shadow: none;
+    width: 200px !important;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 0px !important;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.amount input::placeholder {
+    color: #fff;
+}
+
+.amount input:focus-visible {
+    outline: none;
+}
+
+.amount input:focus {
+    box-shadow: none;
+    border: 1px dashed #fff;
+    background: transparent !important;
+    color: #fff;
+}
+
+.amount .input-group-addon {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.kurs {
+    position: absolute;
+    width: 11px;
+    height: 23px;
+    padding: 151px 284px 34px 32px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    font-family: Custom;
+    margin: -3px 0;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.balance {
+    position: absolute;
+    height: 18px;
+    padding: 100px 244px 64px 32px;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+
+}
+
+.card-name {
+    position: absolute;
+    padding: 20px 20px;
+    width: 150px;
+    height: auto;
+}
+
+.siluet-1 {
+    position: absolute;
+    width: 425px;
+    height: 171px;
+    border-radius: 600px / 200px;
+    margin: 98px -20px -61px -78px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.siluet-2 {
+    position: absolute;
+    width: 335px;
+    height: 259px;
+    border-radius: 50%;
+    margin: 64px 89px -115px -97px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.rectangle {
+    position: absolute;
+    width: 400px;
+    height: 208px;
+
+    background: linear-gradient(112.03deg, #FE5D7F 0%, #1E2BB4 100%);
+    border-radius: 16px;
+}
+
+/* ===========================
+    Radio btn Styling
+============================== */
+.radio_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    width: 280px;
+    height: 50px;
+    border-radius: 9999px;
+    box-shadow: inset 0.5px 0.5px 2px 0 rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+}
+
+input[type="radio"] {
+    appearance: none;
+    display: none;
+}
+
+.radio_container label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    border-radius: 9999px;
+    overflow: hidden;
+    transition: linear 0.3s;
+    color: #000;
+}
+
+input[type="radio"]:checked+label {
+    background-color: #4c8e17;
+    color: #f1f3f5;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-bottom: 0px;
+}
+
+.radio_img {
+    width: 17px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.tab-content {
+    height: auto ! Important;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: unset;
+}
+
+
+/* ===========================
+    Pre Loader Styling
+============================== */
+
+#loader {
+    margin: 0 auto;
+    margin-top: 80px;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: 10px solid #4c8e17;
+    border-top-color: #002147;
+    box-sizing: border-box;
+    background: transparent;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ===========================
+    Sweet Alert Styling
+============================== */
+.swal2-html-container {
+    white-space: pre;
+    font-size: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.swal2-popup {
+    width: 40em !important;
+}
+
+.swal2-actions {
+    margin-bottom: 20px !important;
+}
+
+/* ===========================
+    Local CSS Styling
+============================== */
+
+.text_on_card_div {
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    top: 35%;
+}
+
+.text_on_card_div p {
+    text-align: center;
+    font-size: 10px
+}
+
+#skip-BTN {
+    margin-top: 222px;
+    left: -10px;
+    max-width: 100%;
+    margin-bottom: 50px;
+    position: absolute;
+}
+.logo_in_btn{
+    width: 90px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.w-btn-large{
+    text-transform: capitalize!important;
+}
+/* =======================================
+    Media Queries for responsiveness
+========================================== */
+
+@media screen and (max-width: 992px) {
+    .card {
+        position: relative !important;
+        margin: 0 auto !important;
+        /* width: 90%!important; */
+    }
+
+    .radio_container {
+        margin-bottom: 50px;
+    }
+
+    .balance {
+        padding: 100px 50px 64px 32px;
+    }
+
+    #amount {
+        width: 160px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        position: relative !important;
+        margin: 0 auto !important;
+        width: 90% !important;
+    }
+
+    .rectangle {
+        width: 90%;
+    }
+
+    .balance {
+        padding: 100px 50px 64px 32px;
+    }
+
+    #amount {
+        width: 160px !important;
+    }
+
+
+    /* cover_card */
+    .cover_card {
+        min-height: 440px;
+        padding: 110px 45px 50px 45px;
+    }
+
+    .cover_heading {
+        font-size: 28px;
+    }
+
+    .cover_sub_text {
+        margin-bottom: 0px;
+        font-size: 11px;
+    }
+
+    /* Psot_card */
+    .post_card {
+        min-height: 440px;
+        padding: 110px 45px 50px 45px;
+    }
+
+    .heading_text {
+        margin-bottom: 50px;
+        font-size: 28px;
+    }
+
+    .body_text {
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+
+    .footer_text {
+        width: 75%;
+    }
+
+    /* Cover_card_show */
+    .cover_card_show {
+        padding: 80px 25px 0px 25px;
+        min-height: 362px;
+    }
+
+    .cover_heading_show {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .cover_sub_text_show {
+        font-size: 12px;
+    }
+
+    #container,
+    #shell {
+        max-height: 60%;
+    }
+
+    .post_card_show {
+        padding: 50px 25px 0px 25px;
+        min-height: 362px;
+
+    }
+
+    .body_text_show {
+        min-height: 100px;
+        max-height: 100px;
+        margin-bottom: 20px;
+        font-family: 'Bentham', serif;
+        font-size: 10px;
+        line-height: 13px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .heading_text_show {
+        font-size: 14px;
+        text-align: center;
+        font-family: 'Parisienne', cursive;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .post_card_show .regards_text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .footer_text_show {
+        font-size: 12px;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .radio_container {
+        width: 240px !important;
+    }
+
+    .radio_container label {
+        width: 110px;
+        font-size: 16px
+    }
+
+    .siluet-1 {
+        width: 100%;
+    }
+
+    #amount {
+        width: 140px !important;
+    }
+}
+
+
+
+
+
