@@ -36,8 +36,6 @@ class AuthenticatedSessionController extends Controller
             Session::flash('inactive', 'Your account is not active. Please contact the administrator.');
             return redirect()->back();
         }
-
-
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 

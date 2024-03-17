@@ -14,7 +14,18 @@ class DashboardController extends Controller
 {
     public function index()
     {
+        if(auth()->user()->hasRole('Super Admin')){
+           return redirect()->route('admin.dashboard');
+        }else{
+            return redirect()->route('user.dashboard');
 
+        }
+
+
+    }
+
+    public function adminDashboard()
+    {
         return view('backend.dashboard')
             ->with('listing_count', 12)
             ->with('leads_count', 23)
@@ -22,6 +33,17 @@ class DashboardController extends Controller
             ->with('data_pool_count', 32);
     }
 
+
+    public function userDashboard()
+    {
+        return view('user.dashboard');
+
+        return view('backend.dashboard')
+            ->with('listing_count', 12)
+            ->with('leads_count', 23)
+            ->with('users_count', 323)
+            ->with('data_pool_count', 32);
+    }
 
     private function getCountsByMonth($modelName)
     {

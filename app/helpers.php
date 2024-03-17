@@ -74,6 +74,31 @@ if (!function_exists('generateAlphaNumeric')) {
         return $alphanumeric;
     }
 }
+
+
+if (!function_exists('genHash')) {
+
+function genHash($length = 4, $segments = 4, $separator = '-') {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $code = '';
+    $charLength = strlen($characters);
+
+    for ($i = 0; $i < $segments; $i++) {
+        $segment = '';
+        for ($j = 0; $j < $length; $j++) {
+            $segment .= $characters[rand(0, $charLength - 1)];
+        }
+        $code .= $segment;
+        if ($i < $segments - 1) {
+            $code .= $separator;
+        }
+    }
+
+    return $code;
+}
+}
+
+
 if (!function_exists('generateAlpha')) {
 
     function generateAlpha($length = 5)
