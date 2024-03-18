@@ -29,7 +29,8 @@ class StartMining implements ShouldQueue
 
         foreach ($users as $user) {
 
-            $user->balance += 0.0001;
+            $user->balance += 1;
+            $user->save();
         }
 
 
