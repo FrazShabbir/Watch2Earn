@@ -824,3 +824,11 @@ if (!function_exists('logActivity')) {
         $activity->save();
     }
 }
+
+
+if (!function_exists('roundOff')) {
+    function roundOff($number)
+    {
+        return round($number, 4);
+    }
+}

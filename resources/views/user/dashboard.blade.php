@@ -1398,86 +1398,9 @@
                                     data-id="{{ auth()->id() }}">Start Mining</button>
                             </div>
 
-                            <ul class="list-group list-group-flush border-dashed mb-0 mt-3 pt-2">
-                                <li class="list-group-item px-0">
-                                    <div class="d-flex">
-                                        <div class="flex-shrink-0 avatar-xs">
-                                            <span class="avatar-title bg-light p-1 rounded-circle">
-                                                <img src="{{ asset('backend/assets/images/svg/crypto-icons/btc.svg') }}"
-                                                    class="img-fluid" alt="">
-                                            </span>
-                                        </div>
-                                        <div class="flex-grow-1 ms-2">
-                                            <h6 class="mb-1">Bitcoin</h6>
-                                            <p class="fs-12 mb-0 text-muted"><i
-                                                    class="mdi mdi-circle fs-10 align-middle text-primary me-1"></i>BTC
-                                            </p>
-                                        </div>
-                                        <div class="flex-shrink-0 text-end">
-                                            <h6 class="mb-1">BTC 0.00584875</h6>
-                                            <p class="text-success fs-12 mb-0">$19,405.12</p>
-                                        </div>
-                                    </div>
-                                </li><!-- end -->
-                                <li class="list-group-item px-0">
-                                    <div class="d-flex">
-                                        <div class="flex-shrink-0 avatar-xs">
-                                            <span class="avatar-title bg-light p-1 rounded-circle">
-                                                <img src="assets/images/svg/crypto-icons/eth.svg" class="img-fluid"
-                                                    alt="">
-                                            </span>
-                                        </div>
-                                        <div class="flex-grow-1 ms-2">
-                                            <h6 class="mb-1">Ethereum</h6>
-                                            <p class="fs-12 mb-0 text-muted"><i
-                                                    class="mdi mdi-circle fs-10 align-middle text-info me-1"></i>ETH </p>
-                                        </div>
-                                        <div class="flex-shrink-0 text-end">
-                                            <h6 class="mb-1">ETH 2.25842108</h6>
-                                            <p class="text-danger fs-12 mb-0">$40552.18</p>
-                                        </div>
-                                    </div>
-                                </li><!-- end -->
-                                <li class="list-group-item px-0">
-                                    <div class="d-flex">
-                                        <div class="flex-shrink-0 avatar-xs">
-                                            <span class="avatar-title bg-light p-1 rounded-circle">
-                                                <img src="assets/images/svg/crypto-icons/ltc.svg" class="img-fluid"
-                                                    alt="">
-                                            </span>
-                                        </div>
-                                        <div class="flex-grow-1 ms-2">
-                                            <h6 class="mb-1">Litecoin</h6>
-                                            <p class="fs-12 mb-0 text-muted"><i
-                                                    class="mdi mdi-circle fs-10 align-middle text-warning me-1"></i>LTC
-                                            </p>
-                                        </div>
-                                        <div class="flex-shrink-0 text-end">
-                                            <h6 class="mb-1">LTC 10.58963217</h6>
-                                            <p class="text-success fs-12 mb-0">$15824.58</p>
-                                        </div>
-                                    </div>
-                                </li><!-- end -->
-                                <li class="list-group-item px-0 pb-0">
-                                    <div class="d-flex">
-                                        <div class="flex-shrink-0 avatar-xs">
-                                            <span class="avatar-title bg-light p-1 rounded-circle">
-                                                <img src="assets/images/svg/crypto-icons/dash.svg" class="img-fluid"
-                                                    alt="">
-                                            </span>
-                                        </div>
-                                        <div class="flex-grow-1 ms-2">
-                                            <h6 class="mb-1">Dash</h6>
-                                            <p class="fs-12 mb-0 text-muted"><i
-                                                    class="mdi mdi-circle fs-10 align-middle text-success me-1"></i>DASH
-                                            </p>
-                                        </div>
-                                        <div class="flex-shrink-0 text-end">
-                                            <h6 class="mb-1">DASH 204.28565885</h6>
-                                            <p class="text-success fs-12 mb-0">$30635.84</p>
-                                        </div>
-                                    </div>
-                                </li><!-- end -->
+                            <ul class="list-group list-group-flush border-dashed mb-0 mt-3 pt-2" id="all-currencies"
+                                style="max-height: 500px; overflow:scroll">
+
                             </ul><!-- end -->
                         </div><!-- end card body -->
                     </div><!-- end card -->
@@ -1485,81 +1408,11 @@
 
                 <div class="col-xxl-9 order-xxl-0 order-first">
                     <div class="d-flex flex-column h-100">
-                        <div class="row h-100">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar-sm flex-shrink-0">
-                                                <span class="avatar-title bg-light text-primary rounded-circle fs-3">
-                                                    <i class="ri-money-dollar-circle-fill align-middle"></i>
-                                                </span>
-                                            </div>
-                                            <div class="flex-grow-1 ms-3">
-                                                <p class="text-uppercase fw-semibold fs-12 text-muted mb-1"> Total Invested
-                                                </p>
-                                                <h4 class=" mb-0">$<span class="counter-value"
-                                                        data-target="2390.68">2,390.68</span></h4>
-                                            </div>
-                                            <div class="flex-shrink-0 align-self-end">
-                                                <span class="badge bg-success-subtle text-success"><i
-                                                        class="ri-arrow-up-s-fill align-middle me-1"></i>6.24 %<span>
-                                                    </span></span>
-                                            </div>
-                                        </div>
-                                    </div><!-- end card body -->
-                                </div><!-- end card -->
-                            </div><!-- end col -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar-sm flex-shrink-0">
-                                                <span class="avatar-title bg-light text-primary rounded-circle fs-3">
-                                                    <i class="ri-arrow-up-circle-fill align-middle"></i>
-                                                </span>
-                                            </div>
-                                            <div class="flex-grow-1 ms-3">
-                                                <p class="text-uppercase fw-semibold fs-12 text-muted mb-1"> Total Change
-                                                </p>
-                                                <h4 class=" mb-0">$<span class="counter-value"
-                                                        data-target="19523.25">19,523.25</span></h4>
-                                            </div>
-                                            <div class="flex-shrink-0 align-self-end">
-                                                <span class="badge bg-success-subtle text-success"><i
-                                                        class="ri-arrow-up-s-fill align-middle me-1"></i>3.67 %<span>
-                                                    </span></span>
-                                            </div>
-                                        </div>
-                                    </div><!-- end card body -->
-                                </div><!-- end card -->
-                            </div><!-- end col -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar-sm flex-shrink-0">
-                                                <span class="avatar-title bg-light text-primary rounded-circle fs-3">
-                                                    <i class="ri-arrow-down-circle-fill align-middle"></i>
-                                                </span>
-                                            </div>
-                                            <div class="flex-grow-1 ms-3">
-                                                <p class="text-uppercase fw-semibold fs-12 text-muted mb-1">Day Change</p>
-                                                <h4 class=" mb-0">$<span class="counter-value"
-                                                        data-target="14799.44">14,799.44</span></h4>
-                                            </div>
-                                            <div class="flex-shrink-0 align-self-end">
-                                                <span class="badge bg-danger-subtle text-danger"><i
-                                                        class="ri-arrow-down-s-fill align-middle me-1"></i>4.80 %<span>
-                                                    </span></span>
-                                            </div>
-                                        </div>
-                                    </div><!-- end card body -->
-                                </div><!-- end card -->
-                            </div><!-- end col -->
+                        <div class="row h-100" id="forex">
+
                         </div><!-- end row -->
 
-                        <div class="row">
+                        <div class="row d-none">
                             <div class="col-xl-12">
                                 <div class="card">
                                     <div class="card-header border-0 align-items-center d-flex">
@@ -1653,8 +1506,8 @@
                                                                 <tspan id="SvgjsTspan1826">$6660</tspan>
                                                                 <title>$6660</title>
                                                             </text><text id="SvgjsText1828"
-                                                                font-family="Helvetica, Arial, sans-serif" x="20"
-                                                                y="76.74" text-anchor="end" dominant-baseline="auto"
+                                                                font-family="Helvetica, Arial, sans-serif" x="20" y="76.74"
+                                                                text-anchor="end" dominant-baseline="auto"
                                                                 font-size="11px" font-weight="400" fill="#373d3f"
                                                                 class="apexcharts-text apexcharts-yaxis-label "
                                                                 style="font-family: Helvetica, Arial, sans-serif;">
@@ -2821,6 +2674,8 @@
                 startMining(id);
 
             })
+            getCurrencies();
+            getForex();
         })
 
         function startMining(id) {
@@ -2836,6 +2691,51 @@
                 },
                 success: function(result) {
 
+                },
+                error: function(result) {
+                    showToastify(result.msg, "error");
+
+                    alert("Error " + result.status + ': ' + JSON.stringify(result.responseJSON.errors))
+
+                }
+            });
+        }
+
+        function getCurrencies() {
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: "{{ route('get.cryptos') }}",
+                type: 'POST',
+                dataType: 'html',
+                data: {
+
+                },
+                success: function(result) {
+                    $('#all-currencies').html(result);
+                },
+                error: function(result) {
+                    showToastify(result.msg, "error");
+
+                    alert("Error " + result.status + ': ' + JSON.stringify(result.responseJSON.errors))
+
+                }
+            });
+        }
+        function getForex() {
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: "{{ route('get.forex') }}",
+                type: 'POST',
+                dataType: 'html',
+                data: {
+
+                },
+                success: function(result) {
+                    $('#forex').html(result);
                 },
                 error: function(result) {
                     showToastify(result.msg, "error");

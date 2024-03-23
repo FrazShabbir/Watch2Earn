@@ -13,3 +13,9 @@ use Illuminate\Support\Facades\Route;
         Route::post('/store-note', [App\Http\Controllers\Ajax\AjaxController::class, 'storeNote'])->name('storeNote');
     });
 
+
+    Route::group(["prefix" => "crane/crypto"], function () {
+        Route::post('/get-cryptos', [App\Http\Controllers\Ajax\AjaxController::class, 'getCurrencies'])->name('get.cryptos');
+        Route::post('/get-forex', [App\Http\Controllers\Ajax\AjaxController::class, 'getForex'])->name('get.forex');
+
+    });
